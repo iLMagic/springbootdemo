@@ -20,7 +20,7 @@ public class HelloController {
 
     @GetMapping("test")
     @ResponseBody
-    List<User> test() {
+    User test() {
         return userService.getAllUser();
     }
 }

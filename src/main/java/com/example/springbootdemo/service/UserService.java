@@ -9,11 +9,17 @@ import java.util.List;
 
 @Service
 public class UserService {
-    @Autowired
-    private UserMapper userMapper;
+//    @Autowired
+//    private UserMapper userMapper;
 
 
-    public List<User> getAllUser() {
-        return userMapper.getAllUser();
+    public User getAllUser() {
+        User user = new User();
+        user.setName("hedahai");
+        user.setPwd("123");
+//        List<User> list = new List<User>();
+
+        return user;
+//        return userMapper.getAllUser();
     }
 }
